@@ -1,5 +1,9 @@
+import Layout from "./components/Layout.tsx";
+
 export default function App() {
-  return (
-    "HI"
-  )
+    return (
+        <Layout>
+            <p>Main</p>
+        </Layout>
+    )
 }
