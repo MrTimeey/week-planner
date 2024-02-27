@@ -1,5 +1,6 @@
 import './layout.css'
 import React from 'react';
+import Sidebar from "./Sidebar.tsx";
 
 type LayoutProps = {
     children: string | React.JSX.Element | React.JSX.Element[]
@@ -8,8 +9,8 @@ type LayoutProps = {
 export default function Layout({children}: LayoutProps) {
     return (
         <div className="layout">
-            <div className="sidebar" style={{ background: "darkred"}}>
-                <p>sidebar</p>
+            <div className="sidebar">
+                <Sidebar children={[]}/>
             </div>
             <div className="header" style={{ background: "darkblue"}}>
                 <p>Header</p>
