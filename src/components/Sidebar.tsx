@@ -2,7 +2,7 @@ import {ChevronFirst, ChevronLast, MoreVertical} from "lucide-react";
 import React, {createContext, useState} from "react";
 
 type SidebarProps = {
-    children: string | React.JSX.Element | React.JSX.Element[]
+    children: React.JSX.Element[]
 }
 
 export const SidebarContext = createContext({expanded: true})

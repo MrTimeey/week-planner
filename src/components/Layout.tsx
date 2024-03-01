@@ -3,6 +3,7 @@ import React from 'react';
 import Sidebar from "./Sidebar.tsx";
 import SidebarItem from "./SidebarItem.tsx";
 import {BarChart3, Boxes, LayoutDashboard, LifeBuoy, Package, Receipt, Settings, UserCircle} from "lucide-react";
+import Footer from "./Footer.tsx";
 
 type LayoutProps = {
     children: string | React.JSX.Element | React.JSX.Element[]
@@ -30,8 +31,8 @@ export default function Layout({children}: LayoutProps) {
             <div className="main">
                 {children}
             </div>
-            <div className="footer" style={{ background: "darkgreen"}}>
-                <p>Footer</p>
+            <div className="footer">
+                <Footer />
             </div>
         </div>
     )
